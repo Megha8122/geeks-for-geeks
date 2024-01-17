@@ -1,0 +1,32 @@
+// Function to insert a node in a BST.
+
+/*
+struct Node {
+    int data;
+    Node* left;
+    Node* right;
+
+    Node(int val) {
+        data = val;
+        left = right = NULL;
+    }
+};
+*/
+
+class Solution
+{
+    public:
+        Node* insert(Node* node, int data) {
+        
+     Node *t=node;
+            if(t==NULL) 
+                return new Node(data);
+            if(data>t->data)
+                t->right = insert(t->right,data);
+            else if(data<t->data)
+                t->left = insert(t->left,data);
+            return node;
+        }
+        
+
+};
