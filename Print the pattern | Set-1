@@ -1,0 +1,21 @@
+
+
+/*You are required to complete this method*/
+void printPat(int n)
+{
+      int lines = n;
+    while(lines>0)
+    {
+        for(int i=n;i>0;i--)
+        {
+            int count=0;
+            while(count<lines)
+            {
+                cout<<i<<" ";
+                count++;
+            }
+        }
+        lines--;
+        cout<<"$";
+    }
+}
