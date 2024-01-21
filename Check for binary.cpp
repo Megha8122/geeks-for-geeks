@@ -1,5 +1,3 @@
-
-
 // Return true if str is binary, else false
 bool isBinary(string str)
 {
